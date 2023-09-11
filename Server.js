@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3001;
 const corsOptions = {
-  origin: 'http://localhost:85',
+  origin: 'https://node-app-145l.onrender.com',
   allowedHeaders: ['Content-Type', 'Authorization'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 };
