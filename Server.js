@@ -4,11 +4,13 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3001;
+const port =  process.env.PORT||3001;
 const corsOptions = {
   origin: 'https://node-app-145l.onrender.com',
   allowedHeaders: ['Content-Type', 'Authorization'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
 };
 app.use(cors(corsOptions));
 // Middleware for parsing JSON data
