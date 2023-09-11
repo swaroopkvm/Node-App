@@ -4,7 +4,9 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port =  process.env.PORT||3001;
+
+const port = process.env.PORT||3001;
+
 const corsOptions = {
   origin: 'https://node-app-145l.onrender.com',
   allowedHeaders: ['Content-Type', 'Authorization'],
