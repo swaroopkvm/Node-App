@@ -39,9 +39,10 @@ app.post('/submit-form', (req, res) => {
     ${description}.
     
     Notification needed:${notification}
+    Reply to : ${email}.
     Thanks & Regards,
     ${name},
-    Reply to:${email}.
+    
     `;
     // Email data
     const mailOptions = {
